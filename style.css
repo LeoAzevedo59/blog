@@ -1,0 +1,175 @@
+/*Geral*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2B2A33;
+    color: #DFDFDF;
+}
+
+a {
+    color: #DFDFDF;
+    text-decoration: none;
+}
+
+/*Perfil*/
+.sidebar-left {
+    width: 300px;
+    height: 100vh;
+    background-color: #1C1B22;
+}
+
+.photo  {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 32px auto;
+    background-image: url(/img/leo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-sidebar-left {
+    width: 250px;
+    margin: 32px auto;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.container-sidebar-left img {
+    margin-top: 16px;
+}
+
+/*Menu*/
+.sidebar-right {
+    height: 100vh;
+    background-color: #1C1B22;
+    min-width: 50px;
+    display: flex;
+}
+
+.container-sidebar-right {
+
+    margin: 0 auto;
+    height: 100vh;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 0 32px 0;
+}
+
+img {
+    width: 18px;
+}
+
+
+/*Conteudo*/
+main {
+    width: 75%;
+}
+
+.content {
+    width: 90%;
+    margin: 32px auto;
+}
+
+.post {
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    cursor: pointer;
+}
+
+.text {
+    margin-left: 16px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    border-radius: 100%;
+    background-color: #9b784f;
+    position: relative;
+}
+
+span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #2B2A33;
+    font-weight: bold;
+}
+
+
+/*Responsabilidade*/
+@media only screen and (max-width: 900px) 
+{
+    body {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
+    .sidebar-left {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+
+    .photo {
+        width: 70px;
+        height: 70px;
+        min-width: 70px;
+        margin: 0 32px;
+    }
+
+    .container-sidebar-left {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+
+    }
+
+    .container-sidebar-left > a > img {
+        margin: 0px 16px;
+        padding: 0;
+    }
+
+    .container-sidebar-left > p {
+        display: none;
+    }
+
+    .sidebar-right {
+        
+        background-color: #1C1B22;
+        min-width: 50px;
+        display: flex;
+    }
+    
+    .container-sidebar-right {
+    
+        margin: 0 auto;
+       
+     
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 32px 0 32px 0;
+    }
+}
