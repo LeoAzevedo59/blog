@@ -32,7 +32,7 @@ a {
     height: 150px;
     border-radius: 100%;
     margin: 32px auto;
-    background-image: url(/img/leo.jpg);
+    background-image: url(img/leo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
